@@ -1,0 +1,294 @@
+print("Reversing an Array")
+
+n=int(input("Enter the number of elements: ")) A-[]
+
+R_A-[]
+
+print("Enter the elements: ")
+
+for i in range(n):
+
+elt-int (input("")) A.append(elt)
+
+R_A.append (0)
+
+print("Array: ",A)
+
+for i in range (n):
+
+R_A[i]=A[n-(i+1)]
+
+print("Reversed Array: ",RA)
+
+
+
+
+
+
+
+
+
+
+
+
+
+print("Merging two Arrays")
+n1 = int (input("No. of elements in Al: "))
+n 2 =  int (input ("No. of elements in A2: "))
+A1=[]
+A2=[]
+print("Enter the elements of Al: ")
+
+for i in range (nl):
+
+elt=int(input(""))
+A2.append(elt)
+
+print("Enter the elements of A2: ")
+
+for i in range (n2):
+
+elt=int (input(""))
+
+A2.append(elt)
+
+print("A1: ",Al)
+
+print("A2",A2)
+
+n=n1+n2
+A=[]
+for i in range(n):
+A.append(0)
+
+i = 0
+
+j = 0
+k = 0
+
+while i<=n1-1 and j<=n2-1:
+
+if Al [i]<A2[j]:
+A[k]=Al [i]
+i = i + 1
+k = k + 1
+else:
+A[k] = A  2[j]
+j = j + 1
+k = k + 1
+
+if i>nl-1:
+while j<=n2-1:
+lambda[k] = A2[j]
+j = j + 1
+k = k + 1
+
+else:
+while i<=n1-1:
+A[k] = A1[i]
+i = i + 1
+k = k + 1
+
+print("Merged Array A: ",A)
+
+
+
+
+
+
+
+
+print("Transpose of a Matrix")
+
+#Creating a matrix of dimension rxc m-int(input("Number of Rows: ")) n=int(input("Number of Columns: ")) A=[]
+
+for i in range(m):
+r= []
+for j in range(n):
+r.append (0)
+
+A.append(r)
+
+print("Enter the elements:")
+
+for i in range(m):
+
+for j in range(n):
+elt=int(input())
+A[i][j]=elt
+
+#Printing the matrix
+print("A-")
+
+for i in range(m):
+
+for j in range(n):
+print (A[i][j],end="")
+
+print()
+
+#Printing the transpose of the matrix
+
+print("A"=")
+
+for i in range(n):
+
+for j in range(m):
+print (A[j][i],end="")
+print()
+
+
+
+
+
+
+
+
+print("Multiplication of Matrices")
+
+def create mat (m,n):
+X= []
+
+for i in range(m):
+r=[]
+
+for j in range(n):
+
+r.append(0)
+
+X.append(r)
+
+print("Enter the elements:")
+
+for i in range(m):
+
+for j in range(n):
+
+elt=int(input())
+
+X[i][j]=elt
+
+return X
+
+def print_mat (X,m,n):
+
+for i in range(m):
+
+for j in range(n):
+
+print (X[i][j],end="")
+print ()
+
+ml-int (input ("Number of Rows in A: "))
+
+nl-int (input ("Number of Columns in A: "))
+
+A=create_mat (ml,n1)
+
+print("A=")
+
+print mat (A,ml,nl)
+
+m2=int(input ("Number of Rows in B: "))
+
+n2=int (input ("Number of Columns in B: "))
+
+B=create mat (m2,n2)
+
+print("B=")
+
+print mat (B,m2,n2)
+
+if n1==m2:
+C= []
+
+for i in range(ml):
+r=[]
+
+for j in range (n2):
+r.append (0)
+
+C.append(r)
+
+for i in range(ml):
+
+for j in range (n2):
+sum=0
+for k in range (nl):
+sum=sum+A[i] [k]*B[k] [j] C[i][j]=sum
+
+print("C")
+
+print mat (C,ml,n2)
+
+else:
+print("Multiplication of A and B is not possible.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+print("Addition / Subtraction of Matrices")
+
+def create mat (m,n):
+
+X=[]
+
+for i in range(m): r-[]
+
+for j in range (n):
+
+r.append (0) X.append(r)
+
+print ("Enter the elements:")
+
+for i in range(m): for j in range(n): elt-int(input()) X[i][j]=elt
+
+return X
+
+def print mat(X,m,n): for i in range(m):
+
+for j in range (n):
+
+print (X[i][j],end="") print()
+
+mi-int(input("Number of Rows in A: "))
+
+nl-int (input ("Number of Columns in A: ")) A-create mat (ml,nl)
+
+print("A-")
+
+print_mat (A,mi,ni)
+
+m2-int (input ("Number of Rows in B: "))
+
+n2-int (input("Number of Columns in B: "))
+
+if ml-m2 and n1==n2: B=create mat (ml,nl)
+
+print("B=") print mat (B,ml,nl)
+
+C-11 for i in range(ml): r=[] for j in range(nl): r.append(0) C.append(r)
+
+for i in range(ml): for in range(nl): C[i][j]-A[i][j]+B[i][j]
+
+print("A+B=") print mat (C,ml,nl)
+
+for i in range(ml): for j in range (nl):
+
+C[i][j]=A[1][1]-B[1][j]
+
+print("A-B-")
+
+print_mat (C,ml,nl)
+
+print("The number of rows and columns of both matrices should be name.")
+
